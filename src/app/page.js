@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from "next/link";
 import { 
   FiClock, FiCalendar, FiUser, FiInfo, FiLock, 
   FiChevronDown, FiPlus, FiMinus, FiCheckCircle, FiCheck, FiArrowRight,
@@ -307,14 +308,37 @@ export default function App() {
                 <p className="mb-4">
                   Once dust crosses the work boundary, it can enter occupied rooms or return-air pathways. The response may include cleaning, filter replacement, air-quality review, barrier repairs, or a pause while the facility confirms that conditions are acceptable. In a hospital, laboratory, or data center, even a small breach can trigger a disproportionate operational response.
                 </p>
-                <p className="mb-4">
-                  Construction containment is also only one part of dust control. When work disturbs silica-containing concrete, masonry, mortar, tile, or similar materials, contractors must use the exposure controls that apply to the task. Cal/OSHA’s construction silica standard, Title 8 Section 1532.3, sets an action level of 25 micrograms per cubic meter and a permissible exposure limit of 50 micrograms per cubic meter, each measured as an eight-hour time-weighted average. The standard also addresses engineering and work-practice controls, housekeeping, exposure assessment, and written exposure-control plans.
-                </p>
+         <p className="mb-4">
+  Construction containment is also only one part of dust control. When work
+  disturbs silica-containing concrete, masonry, mortar, tile, or similar
+  materials, contractors must use the exposure controls that apply to the task.
+
+  <Link
+    href="https://www.dir.ca.gov/title8/1532_3.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:text-blue-800 underline"
+  >
+    Cal/OSHA’s construction silica standard, Title 8 Section 1532.3
+  </Link>{" "}
+  sets an action level of 25 micrograms per cubic meter and a permissible
+  exposure limit of 50 micrograms per cubic meter, each measured as an
+  eight-hour time-weighted average. The standard also addresses engineering
+  and work-practice controls, housekeeping, exposure assessment, and written
+  exposure-control plans.
+</p>
                 <p className="mb-4">
                   A temporary wall does not replace source capture, wet methods, HEPA-filtered vacuuming, respiratory protection, or other required controls. It helps establish the work boundary and protect adjacent operations when it is properly selected, sealed, monitored, and maintained.
                 </p>
                 <p className="text-xs sm:text-sm font-bold text-blue-900 bg-blue-50 p-3 rounded-lg border border-blue-100 inline-block">
-                  For a broader planning overview, see 5DCCS’s <a href="#" className="underline text-blue-900 hover:text-blue-950 font-black">guide to California temporary wall regulations and building codes</a>.
+                  For a broader planning overview, see 5DCCS’s <a href="#" className="underline text-blue-900 hover:text-blue-950 font-black">guide to <Link
+  href="https://5dccs.com/california-modular-temporary-wall-regulations/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  California temporary wall regulations and building codes
+</Link></a>.
                 </p>
               </section>
 
@@ -359,13 +383,34 @@ export default function App() {
 </div>
 
                 <p className="mb-4">
-                  Fire terminology is easy to oversimplify. An ASTM E84 Class A result describes surface-burning behavior, including flame spread and smoke development. It does not, by itself, establish that a wall assembly will resist fire for one hour.
+                  Fire terminology is easy to oversimplify. <Link
+  href="https://www.intertek.com/building/standards/astm-e84/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  An ASTM E84 Class A result
+</Link> describes surface-burning behavior, including flame spread and smoke development. It does not, by itself, establish that a wall assembly will resist fire for one hour.
                 </p>
                 <p className="mb-4">
-                  An hourly fire-resistance rating is based on an assembly test such as ASTM E119 or another code-accepted listing. ASTM E119 evaluates how long a complete building element can contain fire, retain structural integrity, or do both under specified test conditions. The studs or frames, panels, joints, penetrations, doors, fasteners, and installation details all matter.
+                  An hourly fire-resistance rating is based on an assembly test such as <Link
+  href="https://www.intertek.com/building/standards/astm-e119/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  ASTM E119
+</Link> or another code-accepted listing. ASTM E119 evaluates how long a complete building element can contain fire, retain structural integrity, or do both under specified test conditions. The studs or frames, panels, joints, penetrations, doors, fasteners, and installation details all matter.
                 </p>
                 <p className="mb-4">
-                  This distinction is especially important when a temporary barrier affects a rated corridor, smoke compartment, exit component, or separation between occupied space and construction. HCAI’s guidance for temporary construction barriers in California healthcare facilities states that when temporary construction is installed during work on a fire-resistive assembly, the temporary construction must meet the same fire rating as the permanent partition. It also prohibits plastic or vinyl dust barriers in place of required fire-rated separations and requires coordination when construction affects egress.
+                  This distinction is especially important when a temporary barrier affects a rated corridor, smoke compartment, exit component, or separation between occupied space and construction.<Link
+  href="https://hcai.ca.gov/document/can-9-3301-fire-resistance-assemblies-and-construction"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  HCAI’s guidance for temporary construction barriers in California healthcare facilities
+</Link> states that when temporary construction is installed during work on a fire-resistive assembly, the temporary construction must meet the same fire rating as the permanent partition. It also prohibits plastic or vinyl dust barriers in place of required fire-rated separations and requires coordination when construction affects egress.
                 </p>
                 
                 <div className="bg-slate-50 border-l-4 border-blue-900 p-5 rounded-r-lg my-6">
@@ -417,11 +462,33 @@ export default function App() {
                   </div>
                 </div>
 
+           <p className="mb-4">
+  Healthcare construction adds infection-control requirements to ordinary dust
+  and life-safety concerns. The{" "}
+  <Link
+    href="https://www.cdc.gov/infection-control/hcp/environmental-control/recommendations.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:text-blue-800 underline"
+  >
+    Centers for Disease Control and Prevention’s guidance for construction and
+    renovation in healthcare facilities
+  </Link>{" "}
+  recommends an Infection Control Risk Assessment (ICRA) before work begins.
+  It calls for barriers that prevent construction dust from entering patient-care
+  areas, remain impermeable to fungal spores, comply with local fire codes, and
+  support negative pressure where required. It also recommends monitoring
+  barrier integrity and repairing gaps or breaks.
+</p>
                 <p className="mb-4">
-                  Healthcare construction adds infection-control requirements to ordinary dust and life-safety concerns. The Centers for Disease Control and Prevention’s guidance for construction and renovation in healthcare facilities recommends an Infection Control Risk Assessment (ICRA) before work begins. It calls for barriers that prevent construction dust from entering patient-care areas, remain impermeable to fungal spores, comply with local fire codes, and support negative pressure where required. It also recommends monitoring barrier integrity and repairing gaps or breaks.
-                </p>
-                <p className="mb-4">
-                  ASHE’s ICRA 2.0 Matrix of Precautions assigns precaution classes based on the construction activity and the patient risk group. For Class IV and Class V work, the matrix calls for critical barriers, sealed penetrations, controlled airflow into the construction area, continuous negative-pressure monitoring, and HEPA-filtered exhaust when air is discharged indoors. Class V also calls for an anteroom sized for personnel, equipment staging, and cleaning.
+                  <Link
+  href="https://www.ashe.org/system/files/media/file/2023/01/ASHE_ICRA_2_TM_form_0.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  ASHE’s ICRA 2.0 Matrix of Precautions
+</Link> assigns precaution classes based on the construction activity and the patient risk group. For Class IV and Class V work, the matrix calls for critical barriers, sealed penetrations, controlled airflow into the construction area, continuous negative-pressure monitoring, and HEPA-filtered exhaust when air is discharged indoors. Class V also calls for an anteroom sized for personnel, equipment staging, and cleaning.
                 </p>
                 <p className="mb-4">
                   Importantly, ICRA 2.0 does not say that every plastic barrier is prohibited. It permits plastic or hard barriers in certain Class IV and V conditions when they are securely installed and protected from movement or damage. The field concern is durability: a flexible barrier in a busy corridor may need more frequent inspection and repair than a rigid, gasketed system.
@@ -430,7 +497,14 @@ export default function App() {
                   For long-duration, high-traffic, or highly sensitive work, rigid modular panels can make the approved containment plan easier to maintain. Smooth surfaces are easier to wipe down. Integrated doors reduce makeshift access points. Gasketed joints support pressure control. Reusable panels can also be removed without cutting and demolishing drywall beside an active patient area.
                 </p>
                 <p className="text-xs sm:text-sm font-bold text-blue-900 bg-blue-50 p-3 rounded-lg border border-blue-100 inline-block">
-                  Project teams comparing service models can review the <a href="#" className="underline text-blue-900 hover:text-blue-950 font-black">advantages of renting modular containment panels</a> for phased or temporary work.
+                  Project teams comparing service models can review the <a href="#" className="underline text-blue-900 hover:text-blue-950 font-black">advantages of <Link
+  href="https://5dccs.com/why-renting-temp-wall-panels-is-the-smart-choice/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  renting modular containment panels
+</Link></a> for phased or temporary work.
                 </p>
               </section>
 
@@ -467,13 +541,27 @@ export default function App() {
                   <li>the schedule impact on the trades waiting behind the barrier.</li>
                 </ul>
                 <p className="mb-4">
-                  These costs are amplified on Bay Area projects, where labor rates are high and public works may be subject to prevailing-wage requirements. California’s applicable rate depends on factors such as location, craft, classification, and bid date, so project teams should use the current Department of Industrial Relations prevailing-wage determination rather than a generic statewide rate.
+                  These costs are amplified on Bay Area projects, where labor rates are high and public works may be subject to prevailing-wage requirements. California’s applicable rate depends on factors such as location, craft, classification, and bid date, so project teams should use the current<Link
+  href="https://www.dir.ca.gov/OPRL/DPreWageDetermination.htm"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  Department of Industrial Relations prevailing-wage determination
+</Link> rather than a generic statewide rate.
                 </p>
                 <p className="mb-4">
                   Temporary drywall is familiar and can be the right answer, but it introduces framing, board installation, joint treatment, curing, and removal. If the project is phased, that process may repeat several times. Modular panels can often be relocated or expanded without rebuilding the separation from raw materials.
                 </p>
                 <p className="mb-4">
-                  This is where a higher-priced system can produce a lower project cost. The value comes from avoided labor and disruption, not from the panel price alone. For budgeting considerations, see the <a href="#" className="text-blue-900 font-bold underline hover:text-blue-950">guide to the real costs of temporary wall pricing in California</a>.
+                  This is where a higher-priced system can produce a lower project cost. The value comes from avoided labor and disruption, not from the panel price alone. For budgeting considerations, see the guide to the <Link
+  href="https://5dccs.com/modular-temporary-wall-pricing-in-california/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  real costs of temporary wall pricing in California
+</Link>.
                 </p>
               </section>
 
@@ -498,7 +586,14 @@ export default function App() {
                 </div>
 
                 <p className="mb-4">
-                  As explained in CalRecycle’s construction-waste guidance, California’s CALGreen framework requires projects that need local construction permits to divert at least 65 percent of construction and demolition material from landfills. Local requirements and project-specific waste plans may add further obligations.
+                  As explained in <Link
+  href="https://calrecycle.ca.gov/organics/slcp/jurisdictions/calgreenmwelo/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  CalRecycle’s construction-waste guidance
+</Link>, California’s CALGreen framework requires projects that need local construction permits to divert at least 65 percent of construction and demolition material from landfills. Local requirements and project-specific waste plans may add further obligations.
                 </p>
                 <p className="mb-4">
                   Temporary drywall adds material during installation and removes it again at closeout. Plastic sheeting is also commonly discarded when it is torn, contaminated, or difficult to recycle. Neither option automatically causes a waste-plan failure, but both add material that must be tracked, transported, and managed.
@@ -604,7 +699,14 @@ export default function App() {
                 </div>
 
                 <p className="mb-4">
-                  These questions also make quotes easier to compare. A cheap proposal may exclude doors, pressure monitoring, after-hours labor, reconfiguration, or removal. A complete proposal makes those responsibilities visible before work starts. For additional field lessons, review these <a href="#" className="text-blue-900 font-bold underline hover:text-blue-950">common contractor mistakes with temporary barriers</a>.
+                  These questions also make quotes easier to compare. A cheap proposal may exclude doors, pressure monitoring, after-hours labor, reconfiguration, or removal. A complete proposal makes those responsibilities visible before work starts. For additional field lessons, review these <Link
+  href="https://5dccs.com/common-contractor-mistakes-temporary-wall-systems/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  common contractor mistakes with temporary barriers
+</Link>
                 </p>
               </section>
 
@@ -640,11 +742,25 @@ export default function App() {
                   When a project involves high traffic, negative pressure, repeated phasing, sensitive occupants, or strict appearance standards, modular containment often earns its premium through faster changes, cleaner removal, and more predictable field performance.
                 </p>
                 <p className="mb-4">
-                  5DCCS provides temporary wall installation and turnkey containment services across the Bay Area and Northern California. The team supports full-service and self-service rentals, system sales, site assessment, layout planning, installation, reconfiguration, and removal.
+                  5DCCS provides <Link
+  href="https://5dccs.com/services/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  temporary wall installation and turnkey containment services
+</Link> across the Bay Area and Northern California. The team supports full-service and self-service rentals, system sales, site assessment, layout planning, installation, reconfiguration, and removal.
                 </p>
                 <div className="p-5 bg-gradient-to-r from-blue-950 to-indigo-950 text-white rounded-xl my-6">
                   <p className="font-bold text-sm sm:text-base m-0 leading-relaxed">
-                    Planning an occupied renovation? Request a free containment consultation to review your layout, schedule, barrier performance, and documentation needs before the work begins.
+                    Planning an occupied renovation? <Link
+  href="https://5dccs.com/contact/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:text-blue-800 underline"
+>
+  Request a free containment consultation
+</Link> to review your layout, schedule, barrier performance, and documentation needs before the work begins.
                   </p>
                 </div>
               </section>
